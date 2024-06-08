@@ -1,0 +1,22 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+body {
+  direction: ltr;
+  font-family: sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  text-align: left;
+  color: #2b2b2b;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  outline: none;
+}
+figure {
+  margin: 0;
+  padding: 0;
+}

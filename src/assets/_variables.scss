@@ -1,0 +1,16 @@
+$color-blue:#1979ff;
+$color-green: #4cad5b;
+$color-black:#232323;
+$color-red:#b40e0e;
+$radius:3px;
+@mixin rounded {
+    border-radius: $radius;
+  }
+  @mixin circle{
+    border-radius: 100%;
+  }
+  @mixin flex-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }

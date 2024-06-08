@@ -1,0 +1,77 @@
+.user-list .user-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 2px dotted #f6f6f6;
+}
+.user-list .user-container .user-info {
+  display: flex;
+}
+.user-list .user-container .user-info figcaption {
+  padding-left: 15px;
+}
+.user-list .user-container .user-info figcaption span {
+  display: block;
+}
+.user-list .user-container .user-info figcaption span:first-child {
+  color: #232323;
+  font-weight: bold;
+  margin: 5px 0;
+}
+.user-list .user-container .user-info figcaption span:last-child {
+  color: #979797;
+}
+.user-list .user-container .user-info .img-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 3px;
+  position: relative;
+}
+.user-list .user-container .user-info .img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+}
+.user-list .user-container .user-info .img-container .status {
+  position: absolute;
+  right: -6px;
+  bottom: -2px;
+  border: 2px solid #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+.user-list .user-container .user-info .img-container .online {
+  background-color: #4cad5b;
+}
+.user-list .user-container .user-info .img-container .offline {
+  background-color: #dddddd;
+}
+.user-list .user-container:last-child {
+  border-bottom: none;
+}
+
+.button, .btn-added, .btn-add {
+  width: 65px;
+  height: 25px;
+  text-align: center;
+  border-radius: 23px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-add {
+  background-color: #e3eeff;
+  color: #1979ff;
+}
+
+.btn-added {
+  background-color: #ebfaf3;
+  color: #4cad5b;
+}
+
+.add-user-icon {
+  width: 12px;
+  margin-right: 4px;
+}/*# sourceMappingURL=userList.css.map */

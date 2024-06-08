@@ -1,0 +1,99 @@
+@use "../../assets/variables" as v;
+
+.no-item {
+  background-color: #f2f2f2;
+  color: #a6a6a6;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.selected-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  .user-selected {
+    width: 15%;
+    padding: 0 5px;
+    @include v.flex-center;
+    flex-direction: column;
+    figcaption {
+      color: #858585;
+      text-align: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
+      white-space: nowrap;
+      font-size: 14px;
+    }
+    div {
+      width: 50px;
+      height: 50px;
+      @include v.circle;
+      position: relative;
+      margin-bottom: 10px;
+      img {
+        width: 100%;
+        height: 100%;
+        @include v.circle;
+      }
+      span {
+        display: flex;
+        background-color: #fff;
+        @include v.circle;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 0;
+        bottom: -3px;
+        align-items: center;
+        justify-content: center;
+        i {
+          color: v.$color-green;
+        }
+      }
+    }
+  }
+  .selected-counter {
+    width: 50px;
+    height: 50px;
+    @include v.circle;
+    color: v.$color-blue;
+    border: 2px solid v.$color-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 991px) {
+  .selected-container {
+    .user-selected {
+      figcaption {
+        font-size: 13px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 567px) {
+  .selected-container {
+    .user-selected {
+      figcaption {
+        font-size: 12px;
+      }
+      div {
+        width: 34px;
+        height: 34px;
+        span {
+          width: 17px;
+          height: 16px;
+          right: -4px;
+        }
+      }
+    }
+    .selected-counter {
+      width: 34px;
+      height: 34px;
+    }
+  }
+}
